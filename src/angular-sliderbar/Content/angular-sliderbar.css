@@ -1,0 +1,179 @@
+﻿slider-bar {
+	display: block;
+	width: 100%;
+}
+
+.sb-main-container {
+	height: 75px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-radius: 6px;
+	text-align: left;
+	color: white;
+}
+
+.sb-values-container {
+	position: relative;
+	width: 100%;
+	height: 9px;
+	background-color: white;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.sb-value-range {
+	position: absolute;
+	height: 9px;
+	cursor: default;
+	min-width: 1px;
+}
+
+	.sb-value-range.error {
+		background-color: lightcoral;
+	}
+
+	.sb-value-range.warning {
+		background-color: rgb(199, 230, 173);
+	}
+
+.sb-markers-container {
+	position: relative;
+	z-index: 2;
+}
+
+.sb-marker {
+	z-index: 3;
+	font-size: 10px;
+	cursor: pointer;
+}
+
+.sb-markers {
+	position: relative;
+	width: 100%;
+}
+
+.sb-marker-mini {
+	position: absolute;
+	height: 10px;
+	cursor: pointer;
+}
+
+	.sb-marker-mini > div {
+		width: 1px;
+		background-color: white;
+		margin: 0 auto;
+		height: 4px;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+	}
+
+.sb-marker {
+	position: absolute;
+	text-align: center;
+}
+
+	.sb-marker > div {
+		width: 1px;
+		background-color: white;
+		margin: 0 auto;
+		height: 8px;
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+	}
+	
+.sb-draggable-container {
+	position: relative;
+	width: 100%;
+	height: 35px;
+}
+
+.sb-draggable-container-top {
+	
+}
+
+.sb-draggable-container-bottom {
+}
+
+.sb-draggable {
+	position: absolute;
+	cursor: pointer;
+    width: 13px;
+    height: 35px;
+	z-index: 10;
+}
+
+.sb-draggable-label {
+	height: 15px;
+	font-size: 10px;
+}
+
+.sb-draggable-thumb {
+	width: 13px;
+	height: 13px;
+	border-radius: 8px;
+	background-color: #4EA3D6;
+}
+
+.sb-draggable-marker {
+	margin: 0 auto;
+	width: 1px;
+	height: 16px;
+	background-color: #4EA3D6;
+}
+
+.sb-draggable.sb-ranged-draggable-start {
+	position: absolute;
+	cursor: pointer;
+    width: 13px;
+    height: 48px;
+	z-index: 10;
+}
+
+.sb-draggable.sb-ranged-draggable-start > .sb-draggable-thumb {
+	width: 0px;
+	height: 0px;
+	border-top: 13px solid transparent;
+	border-right: 13px solid #b94a48;
+	border-radius: 0px;
+	background-color: inherit;
+}
+
+
+.sb-draggable.sb-ranged-draggable-end {
+	position: absolute;
+	cursor: pointer;
+    width: 13px;
+    height: 48px;
+	z-index: 10;
+}
+
+.sb-draggable.sb-ranged-draggable-end > .sb-draggable-thumb {
+	width: 0px;
+	height: 0px;
+	border-top: 13px solid transparent;
+	border-left: 13px solid #b94a48;
+	border-radius: 0px;
+	background-color: inherit;
+}
+
+.sb-draggable.sb-ranged-draggable-end > .sb-draggable-marker {
+	width: 1px;
+	height: 20px;
+	background-color: #b94a48;
+	margin: inherit;
+}
+
+.sb-draggable.sb-ranged-draggable-start > .sb-draggable-marker {
+	width: 1px;
+	height: 20px;
+	background-color: #b94a48;
+	margin-left: 12px;
+}
+
+.sb-draggable-range {
+	position: absolute;
+	margin-top: 28px;
+    height: 5px;
+	z-index: 10;
+	background-color: #b94a48;
+}
